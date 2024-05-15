@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding with Robby</title>
+    <!--<link rel="stylesheet" href="./style.css" />-->
+    <style>
+      *      {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+      body  {
+                background: #f2f2f2;
+            }
+    
+    @keyframes 
+                slide 
+            {
+              from  {
+                      transform: translateX(0);
+                    }
+              to    {
+                      transform: translateX(-100%);
+                    }
+            }
+    
+      .logos 
+            {
+                overflow: hidden;
+                padding: 60px 0;
+                background: white;
+                white-space: nowrap;
+                position: relative;
+            }
+    
+      .logos:before,
+      .logos:after 
+            {
+                position: absolute;
+                top: 0;
+                width: 250px;
+                height: 100%;
+                content: "";
+                z-index: 2;
+            }
+    
+      .logos:before 
+            {
+                left: 0;
+                background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+            }
+    
+      .logos:after 
+            {
+                right: 0;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+            }
+    
+      .logos:hover .logos-slide 
+            {
+                animation-play-state: paused;
+            }
+    
+      .logos-slide 
+            {
+                display: inline-block;
+                animation: 35s slide infinite linear;
+            }
+    
+      .logos-slide img 
+            {
+                height: 50px;
+                margin: 0 40px;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="https://www.wuerth.com/pictures/company-logos/CH-KMT_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/CH-Airproduct.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-Arnold_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-HommelHercules_web.jpg.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE_WOW_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/SE-Autocom_Konvertiert.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-Wabco_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/Wuerth_Elektronik-Gruppe.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-Reca.jpg"/>
+      </div>
+
+      <div class="logos-slide">
+        <img src="https://www.wuerth.com/pictures/company-logos/CH-KMT_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/CH-Airproduct.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-Arnold_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-HommelHercules_web.jpg.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE_WOW_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/SE-Autocom_Konvertiert.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-Wabco_Logo.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/Wuerth_Elektronik-Gruppe.jpg" />
+        <img src="https://www.wuerth.com/pictures/company-logos/DE-Reca.jpg"/>
+      </div>
+    </div>
+  </body>
+</html>
